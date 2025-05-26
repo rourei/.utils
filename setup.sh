@@ -9,10 +9,17 @@
 
 # Packages
 sudo apt update
+sudo apt upgrade
 sudo apt install terminator
 sudo apt install vim
 sudo apt install git
 sudo apt install htop
+
+WSL_CONFIG_FILE=/proc/sys/fs/binfmt_misc/WSLInterop
+if ! [ -f "$WSL_CONFIG_FILE" ]; then
+  # Necessary to enable the EurKey layout
+  sudo apt install gnome-tweaks
+fi
 
 # Git Config
 git config --global user.name "Firstname Lastname"
