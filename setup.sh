@@ -38,6 +38,3 @@ git clone git@github.com:rourei/.dotfiles.git
 ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.vim .vim
 
-mkdir _ws
-cd _ws
-git clone git@github.com:rourei/rourei.github.io.git
